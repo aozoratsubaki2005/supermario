@@ -48,7 +48,7 @@ public class Player extends GameObject {
 		state = PlayerState.Small;
 		currSprite = spriteS;
 		
-		currSprite = spriteS;
+
 		currAnimation = playerWalkS;
 	}
 
