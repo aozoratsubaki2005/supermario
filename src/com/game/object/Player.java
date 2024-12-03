@@ -73,13 +73,13 @@ public class Player extends GameObject {
 	    		g.drawImage(currSprite[5], (int) getX(), (int) getY(), (int) getWidth(), (int) getHeight(), null);
 	    		
 	    	} else {
-	    		g.drawImage(currSprite[5], (int) (getX() + getWidth()), (int) getY(), (int) getWidth(), (int) getHeight(), null);
+	    		g.drawImage(currSprite[5], (int) (getX() + getWidth()), (int) getY(), (int) -getWidth(), (int) getHeight(), null);
 	    	} 
 	    } else if (getVelX() > 0) {	// khi di sang phai
 	    	currAnimation.drawAnimation(g, (int) getX(), (int) getY(), (int) getWidth(), (int) getHeight());
 	    	forward = true;
 	    } else if (getVelX() < 0) {	// khi di sang trai
-	    	currAnimation.drawAnimation(g, (int) (getX() + getWidth()), (int) getY(), (int) getWidth(), (int) getHeight());
+	    	currAnimation.drawAnimation(g, (int) (getX() + getWidth()), (int) getY(), (int) -getWidth(), (int) getHeight());
 	    	forward = false;
 	    } else {	// neu dung yen
 	    	g.drawImage(currSprite[0], (int) getX(), (int) getY(), (int) getWidth(), (int) getHeight(), null);
